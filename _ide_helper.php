@@ -1,21 +1,21 @@
 <?php
 
-namespace YdOpen\ApiStore\facade {
+namespace loong\ApiStore\facade {
     /**
-     * @see \YdOpen\ApiStore\Http
-     * @method \YdOpen\ApiStore\Http setToken(string $token)
-     * @package YdOpen\ApiStore
+     * @see \loong\ApiStore\Http
+     * @method \loong\ApiStore\Http setToken(string $token)
+     * @package loong\ApiStore
      */
     class Http
     {
         /**
          * 验证码相关接口
          * @access public
-         * @return \YdOpen\ApiStore\Http
+         * @return \loong\ApiStore\Http
          */
         public static function setToken(string $token)
         {
-            /** @var \YdOpen\ApiStore\Http $instance */
+            /** @var \loong\ApiStore\Http $instance */
             return $instance;
         }
     }

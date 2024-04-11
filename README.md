@@ -3,7 +3,7 @@
 #### 安装
 
 ```
-composer require yd-open/apistore-cloud
+composer require loong/apistore-cloud
 ```
 
 #### 使用说明
@@ -12,7 +12,7 @@ composer require yd-open/apistore-cloud
 
 require '../vendor/autoload.php';
 
-use YdOpen\ApiStore\facade\Http;
+use loong\ApiStore\facade\Http;
 
 echo "<pre>";
 try {

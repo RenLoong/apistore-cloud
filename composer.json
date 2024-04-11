@@ -1,9 +1,9 @@
 {
-    "name": "yd-open/apistore-cloud",
+    "name": "loong/apistore-cloud",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "YdOpen\\ApiStore\\": "src/"
+            "loong\\ApiStore\\": "src/"
         },
         "files": [
             "./src/helpers.php"

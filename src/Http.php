@@ -1,9 +1,9 @@
 <?php
 
-namespace YdOpen\ApiStore;
+namespace loong\ApiStore;
 
 use GuzzleHttp\Client;
-use YdOpen\ApiStore\response\Code;
+use loong\ApiStore\response\Code;
 
 class Http
 {
@@ -12,12 +12,16 @@ class Http
     protected $contents;
     public function __construct()
     {
+        $baseUrl = env('YD_CLOUD_SERVICE_BASE_URL');
+        if ($baseUrl) {
+            $this->baseUrl = $baseUrl;
+        }
     }
     /**
      * 设置token
      *
      * @param string $token
-     * @return \YdOpen\ApiStore\Http
+     * @return \loong\ApiStore\Http
      */
     public function setToken(string $token)
     {
@@ -67,7 +71,7 @@ class Http
      *
      * @param string $url
      * @param array $params
-     * @return \YdOpen\ApiStore\Http
+     * @return \loong\ApiStore\Http
      */
     public function get(string $url, $params = [])
     {
@@ -83,7 +87,7 @@ class Http
      *
      * @param string $url
      * @param array $params
-     * @return \YdOpen\ApiStore\Http
+     * @return \loong\ApiStore\Http
      */
     public function post(string $url, $params = [])
     {
@@ -100,7 +104,7 @@ class Http
      * @param string $url
      * @param string|array $file
      * @param array $params
-     * @return \YdOpen\ApiStore\Http
+     * @return \loong\ApiStore\Http
      */
     public function upload(string $url, string|array $file, $params = [])
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace YdOpen\ApiStore\response;
+namespace loong\ApiStore\response;
 
 class Code
 {

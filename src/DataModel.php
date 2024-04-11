@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace YdOpen\ApiStore;
+namespace loong\ApiStore;
 
 use ArrayAccess;
 use JsonSerializable;
