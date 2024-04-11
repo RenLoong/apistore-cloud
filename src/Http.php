@@ -12,7 +12,7 @@ class Http
     protected $contents;
     public function __construct()
     {
-        $baseUrl = env('YD_CLOUD_SERVICE_BASE_URL');
+        $baseUrl = yd_env('YD_CLOUD_SERVICE_BASE_URL');
         if ($baseUrl) {
             $this->baseUrl = $baseUrl;
         }
